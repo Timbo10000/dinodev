@@ -1,8 +1,5 @@
 //Tim Stinkt
 
-
-
-
 /**
  * T-Rex runner.
  * @param {string} outerContainerId Outer containing element id.
