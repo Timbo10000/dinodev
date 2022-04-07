@@ -20,6 +20,7 @@ function _isIpad() {
   return isIpad;
 }
 
+
 function Runner(outerContainerId, opt_config) {
   // Singleton
   if (Runner.instance_) {
@@ -1006,14 +1007,13 @@ Runner.prototype = {
     } else {
       this.gameOverPanel.draw();
     }
-
     // Update the high score.
     if (this.distanceRan > this.highestScore) {
       this.highestScore = Math.ceil(this.distanceRan);
       this.distanceMeter.setHighScore(this.highestScore);
       window.localStorage.setItem('chrome-dino', this.highestScore);
     }
-
+    
     // Reset the time clock.
     this.time = getTimeStamp();
   },
