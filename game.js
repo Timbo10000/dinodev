@@ -100,7 +100,7 @@ var DEFAULT_WIDTH = 600;
  * Frames per second.
  * @const
  */
-var FPS = 60;
+var FPS = 1000;
 
 /** @const */
 var IS_HIDPI = window.devicePixelRatio > 1;
@@ -1288,6 +1288,7 @@ GameOverPanel.prototype = {
   /**
    * Draw the panel.
    */
+
   draw: function () {
     var dimensions = GameOverPanel.dimensions;
 
